@@ -1,0 +1,83 @@
+body{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-image: url('https://media3.giphy.com/media/aPlzgxciAwVj2/giphy.gif?cid=ecf05e47a3126eb06e57e36a77bf536a5e12614217e91aee&rid=giphy.gif');
+}
+.header{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 140px;
+    color: aliceblue;
+}
+input{
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    font-family: 'Chathura', sans-serif;
+    font-size: 35px;
+    color: black;
+    display: inline-block;;
+}
+#mainButton{
+    font-size: 20px;
+    font-family: 'Chathura', sans-serif;
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    border-bottom: solid 3px #b8ae21;
+    border-left: solid 3px #cde021;
+    color: #0a0a0a;
+    transition: .4s;
+    height: 40px;
+    width: 80px;
+    margin-top: 10px;
+    margin-left: 40%;
+    border-radius: 6px;
+}
+#mainButton:hover {
+    padding-left: 0.7em;
+    padding-right: 0.3em;
+}
+#mainButton:active {
+    width: 120px;
+}
+.city{
+    position: relative;
+    background-color: rgba(173, 145, 18, 0.329);
+    width: 200px;
+    height: 180px;
+    margin-left: 32%;
+    font-size: 25px;
+    margin-top: 4%;
+    border-radius: 10px;
+    font-family: 'Chathura', sans-serif;
+    text-align: center;
+    border: 2px solid yellow;
+}
+.save{
+    width: 40px;
+    font-family: 'Chathura', sans-serif;
+    margin-top: 2%;
+    border: 2px solid rosybrown;
+    border-radius: 7px;
+    background-color: rgba(229, 245, 9, 0.815);
+}
+.remove{
+    width: 40px;
+    font-family: 'Chathura', sans-serif;
+    margin-top: 2%;
+    border: 2px solid rosybrown;
+    border-radius: 7px;
+    background-color: rgba(229, 245, 9, 0.815);
+}
+.line{
+    font-weight: bold;
+    font-family: 'Chathura', sans-serif;
+    display: inline;
+    color: indigo;
+}

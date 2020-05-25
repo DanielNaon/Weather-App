@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Rubik:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chathura&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="header">Weather App</div>
+    <input type="text" placeholder="Search Your City's Weather:"/>
+    <button id="mainButton" onclick="handleSearch()" >Search!</button>
+    <script id="cities-template" type="text/x-handlebars-template">
+        {{#each cities}}
+        <div class="city">
+            <div id={{name}}><div class="line">name:</div> {{name}}</div>
+            <div><div class="line">temperature:</div> {{temperature}}</div>
+            <div><div class="line">condition:</div> {{condition}}</div>
+            <button class="save">Save!</button>
+            <button class="remove">Remove!</button>
+        </div>
+        {{/each}}
+    </script>
+    <div id="container-cities"></div>
+    <script src="./jquery/dist/jquery.js"></script>
+    <script src="./handlebars/dist/handlebars.js"></script>
+
+    <script src="TempManager.js"></script>
+    <script src="Renderer.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
